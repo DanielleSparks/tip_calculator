@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="calculatorStyle.css">
+  </head>
+  <body>
+    <h1>Use this tool to calculate your total bill with tip!</h1>
+    <div class="calculator_box">
+      <p>
+      <script src="mytipcalculator.js"></script>
+    </p>
+    <form>
+        Enter the amount of your bill: $ <input type= "text" maxlength="3" size="6" id="billPreTip" />
+    <p>
+        Tip percentage: <input type= "text" maxlength="3" size="4" id="tipPercentage" />%
+    </p>
+  </form>
+    <p>
+        <input type="button" onClick="calculate()" />Figure Tip </button>
+    </p>
+    <p>
+        Your total bill with a <var tipPercentage> tip is: $<span id = result></span>
+    </p>
+  </div>
+  </body>
+</html>
